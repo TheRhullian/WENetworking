@@ -16,6 +16,7 @@
 		C718504429F32EB000B7CBFC /* WENetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C718504329F32EB000B7CBFC /* WENetworkingTests.swift */; };
 		C718504E29F32EB000B7CBFC /* WENetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C718504D29F32EB000B7CBFC /* WENetworkingUITests.swift */; };
 		C718505029F32EB000B7CBFC /* WENetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C718504F29F32EB000B7CBFC /* WENetworkingUITestsLaunchTests.swift */; };
+		C718506329F3369700B7CBFC /* WENetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C718506229F3369700B7CBFC /* WENetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C718504929F32EB000B7CBFC /* WENetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WENetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C718504D29F32EB000B7CBFC /* WENetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WENetworkingUITests.swift; sourceTree = "<group>"; };
 		C718504F29F32EB000B7CBFC /* WENetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WENetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C718506229F3369700B7CBFC /* WENetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WENetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,10 @@
 		C718502B29F32EAE00B7CBFC /* WENetworking */ = {
 			isa = PBXGroup;
 			children = (
-				C718502C29F32EAE00B7CBFC /* AppDelegate.swift */,
-				C718502E29F32EAE00B7CBFC /* SceneDelegate.swift */,
-				C718503029F32EAE00B7CBFC /* ViewController.swift */,
-				C718503229F32EAE00B7CBFC /* Main.storyboard */,
-				C718503529F32EB000B7CBFC /* Assets.xcassets */,
-				C718503729F32EB000B7CBFC /* LaunchScreen.storyboard */,
-				C718503A29F32EB000B7CBFC /* Info.plist */,
+				C718506129F3359C00B7CBFC /* Network */,
+				C718505F29F334C700B7CBFC /* Resources */,
+				C718505E29F334B100B7CBFC /* Infra */,
+				C718505C29F3347100B7CBFC /* Modules */,
 			);
 			path = WENetworking;
 			sourceTree = "<group>";
@@ -125,6 +124,58 @@
 				C718504F29F32EB000B7CBFC /* WENetworkingUITestsLaunchTests.swift */,
 			);
 			path = WENetworkingUITests;
+			sourceTree = "<group>";
+		};
+		C718505C29F3347100B7CBFC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C718505D29F3348B00B7CBFC /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C718505D29F3348B00B7CBFC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C718503029F32EAE00B7CBFC /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C718505E29F334B100B7CBFC /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				C718503A29F32EB000B7CBFC /* Info.plist */,
+				C718502C29F32EAE00B7CBFC /* AppDelegate.swift */,
+				C718502E29F32EAE00B7CBFC /* SceneDelegate.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		C718505F29F334C700B7CBFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C718503529F32EB000B7CBFC /* Assets.xcassets */,
+				C718506029F334D200B7CBFC /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C718506029F334D200B7CBFC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C718503229F32EAE00B7CBFC /* Main.storyboard */,
+				C718503729F32EB000B7CBFC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C718506129F3359C00B7CBFC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C718506229F3369700B7CBFC /* WENetworking.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C718503129F32EAE00B7CBFC /* ViewController.swift in Sources */,
+				C718506329F3369700B7CBFC /* WENetworking.swift in Sources */,
 				C718502D29F32EAE00B7CBFC /* AppDelegate.swift in Sources */,
 				C718502F29F32EAE00B7CBFC /* SceneDelegate.swift in Sources */,
 			);
@@ -439,7 +491,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5FAL96G48;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WENetworking/Info.plist;
+				INFOPLIST_FILE = WENetworking/Infra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +519,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5FAL96G48;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WENetworking/Info.plist;
+				INFOPLIST_FILE = WENetworking/Infra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
